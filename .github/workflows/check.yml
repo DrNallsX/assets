@@ -1,3 +1,4 @@
+# Fork-local CI hardening; keep this workflow compatible when synchronizing upstream.
 name: Check
 
 on:
