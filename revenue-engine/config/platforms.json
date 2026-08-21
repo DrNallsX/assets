@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "platforms": {
+    "zora": {
+      "enabled": true,
+      "priority": 1,
+      "mode": "creator_posts_and_coins",
+      "public_profile": null,
+      "public_wallet_address": null,
+      "requires_owner_signature": true,
+      "notes": "Use original posts and track creator/trade rewards. Never simulate trading volume."
+    },
+    "ko_fi": {
+      "enabled": true,
+      "priority": 2,
+      "mode": "digital_products_commissions_tips",
+      "public_store_url": null,
+      "requires_owner_payment_account": true
+    },
+    "itch_io": {
+      "enabled": true,
+      "priority": 3,
+      "mode": "digital_asset_packs_tools",
+      "public_profile": null,
+      "requires_owner_payment_account": true
+    },
+    "opensea": {
+      "enabled": true,
+      "priority": 4,
+      "mode": "nft_collection",
+      "chain_preference": "base",
+      "public_wallet_address": null,
+      "requires_owner_signature": true
+    },
+    "rarible": {
+      "enabled": true,
+      "priority": 5,
+      "mode": "nft_collection_or_community_marketplace",
+      "public_wallet_address": null,
+      "requires_owner_signature": true
+    },
+    "magic_eden": {
+      "enabled": true,
+      "priority": 6,
+      "mode": "solana_nft_collection",
+      "chain_preference": "solana",
+      "public_wallet_address": null,
+      "requires_owner_signature": true
+    },
+    "etsy": {
+      "enabled": false,
+      "priority": 7,
+      "mode": "digital_downloads",
+      "public_shop_url": null,
+      "activation_reason": "Enable after demand validation because each listing incurs a fee."
+    },
+    "gumroad": {
+      "enabled": false,
+      "priority": 8,
+      "mode": "digital_products_memberships",
+      "public_profile": null,
+      "activation_reason": "Enable after demand validation because direct-sale fees are materially higher than several alternatives."
+    }
+  }
+}
