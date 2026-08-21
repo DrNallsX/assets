@@ -5,10 +5,11 @@
       "enabled": true,
       "priority": 1,
       "mode": "creator_posts_and_coins",
-      "public_profile": null,
-      "public_wallet_address": "0x8467B8BD6BD64C14F82Ed125EBeCf1E9b8134e4F",
+      "public_profile": "drnalls",
+      "public_wallet_address": "0xc7127a7381c3200b57b6caac033939b3fb849ce9",
+      "public_external_wallet_address": "0x8467B8BD6BD64C14F82Ed125EBeCf1E9b8134e4F",
       "requires_owner_signature": true,
-      "notes": "Use original posts and track creator/trade rewards. Never simulate trading volume."
+      "notes": "Primary Zora monitoring address is the Zora smart wallet. External creator MetaMask is recorded separately. Use original posts and track creator/trade rewards. Never simulate trading volume."
     },
     "ko_fi": {
       "enabled": true,
