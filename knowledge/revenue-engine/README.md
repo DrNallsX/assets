@@ -38,7 +38,7 @@ A deterministic generative-art series based on geometric signals, orbital paths,
 Run locally:
 
 ```bash
-python revenue-engine/src/generate_signal_relics.py --count 24 --out revenue-engine/build/signal-relics
+python knowledge/revenue-engine/src/generate_signal_relics.py --count 24 --out knowledge/revenue-engine/build/signal-relics
 ```
 
 The output contains `images/*.svg`, `metadata/*.json`, and `catalog.json`.
