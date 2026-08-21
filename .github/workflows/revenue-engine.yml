@@ -3,7 +3,7 @@ name: Revenue Engine Smoke Test
 on:
   pull_request:
     paths:
-      - 'revenue-engine/**'
+      - 'knowledge/revenue-engine/**'
       - '.github/workflows/revenue-engine.yml'
   workflow_dispatch:
 
@@ -19,7 +19,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Generate test collection
-        run: python revenue-engine/src/generate_signal_relics.py --count 24 --out /tmp/signal-relics
+        run: python knowledge/revenue-engine/src/generate_signal_relics.py --count 24 --out /tmp/signal-relics
       - name: Validate deterministic outputs
         run: |
           python - <<'PY'
