@@ -53,7 +53,6 @@ def svg_for(token_id: int, seed: str) -> tuple[str, dict]:
         '<g fill="none" stroke-linecap="round">',
     ]
 
-    # Orbital rings
     for i in range(rings):
         radius = 110 + i * (330 / max(1, rings - 1))
         width = 2 + (i % 3)
@@ -66,7 +65,6 @@ def svg_for(token_id: int, seed: str) -> tuple[str, dict]:
             f'stroke-dasharray="{dash}" transform="rotate({rng.randrange(360)} {cx} {cy})"/>'
         )
 
-    # Signal spokes
     for i in range(spokes):
         a = phase + (math.tau * i / spokes)
         inner = rng.randint(75, 165)
@@ -82,7 +80,6 @@ def svg_for(token_id: int, seed: str) -> tuple[str, dict]:
             f'opacity="{rng.uniform(0.35, 0.9):.3f}"/>'
         )
 
-    # Central glyph
     sides = rng.randint(3, 8)
     r = rng.randint(70, 135)
     pts = []
@@ -94,7 +91,6 @@ def svg_for(token_id: int, seed: str) -> tuple[str, dict]:
         f'fill="{c1}" fill-opacity="0.12"/>'
     )
 
-    # Provenance mark
     fingerprint = hashlib.sha256(f"{seed}:{token_id}".encode()).hexdigest()[:12].upper()
     parts += [
         '</g>',
@@ -135,7 +131,7 @@ def build(count: int, out_dir: Path, seed: str) -> None:
             ],
             "properties": {
                 "collection": COLLECTION,
-                "generator": "revenue-engine/src/generate_signal_relics.py",
+                "generator": "knowledge/revenue-engine/src/generate_signal_relics.py",
                 "license": "Copyright retained by creator; purchaser receives ownership of the token/digital file only unless separately licensed."
             }
         }
@@ -153,7 +149,7 @@ def build(count: int, out_dir: Path, seed: str) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--count", type=int, default=24)
-    parser.add_argument("--out", type=Path, default=Path("revenue-engine/build/signal-relics"))
+    parser.add_argument("--out", type=Path, default=Path("knowledge/revenue-engine/build/signal-relics"))
     parser.add_argument("--seed", default="signal-relics-v1")
     args = parser.parse_args()
     if args.count < 1 or args.count > 10000:
