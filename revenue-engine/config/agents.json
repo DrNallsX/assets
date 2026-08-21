@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "agents": [
+    {
+      "id": "opportunity_scout",
+      "mission": "Rank monetization opportunities using current platform data, zero-upfront-cost preference, demand evidence, friction, and legal risk.",
+      "outputs": ["opportunity_scorecard", "recommended_channel_order"]
+    },
+    {
+      "id": "collection_architect",
+      "mission": "Design original digital-asset collections with coherent theme, edition model, provenance, and release cadence.",
+      "outputs": ["collection_spec", "edition_plan", "release_calendar"]
+    },
+    {
+      "id": "generative_studio",
+      "mission": "Generate original deterministic SVG art and NFT metadata from first-party code and parameters.",
+      "outputs": ["svg_assets", "metadata_json", "catalog"]
+    },
+    {
+      "id": "product_factory",
+      "mission": "Package original assets into legitimate digital products such as wallpapers, printable art, design packs, and bundles.",
+      "outputs": ["product_variants", "bundle_manifest"]
+    },
+    {
+      "id": "listing_agent",
+      "mission": "Prepare platform-specific titles, descriptions, tags, price tests, royalty settings, and listing payload drafts.",
+      "outputs": ["listing_payloads", "pricing_tests"]
+    },
+    {
+      "id": "distribution_agent",
+      "mission": "Prepare compliant organic promotion plans, referral-safe links, launch posts, and content calendars without spam or fake engagement.",
+      "outputs": ["promotion_calendar", "channel_copy"]
+    },
+    {
+      "id": "analytics_agent",
+      "mission": "Track impressions, clicks, conversions, gross sales, platform fees, network fees, refunds, and net realized revenue.",
+      "outputs": ["revenue_ledger", "channel_roi", "positive_revenue_signal"]
+    },
+    {
+      "id": "risk_rights_agent",
+      "mission": "Block releases that contain secrets, third-party copyrighted material, deceptive claims, fake scarcity, wash trading, or unsupported earnings promises.",
+      "outputs": ["release_gate", "risk_findings"]
+    }
+  ],
+  "hard_gates": {
+    "wallet_signature_required": true,
+    "payment_account_owner_controlled": true,
+    "store_private_keys": false,
+    "allow_wash_trading": false,
+    "allow_fake_reviews": false,
+    "allow_spam": false,
+    "allow_copyrighted_derivatives_without_rights": false,
+    "allow_guaranteed_return_claims": false
+  }
+}
