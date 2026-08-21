@@ -6,7 +6,7 @@
       "priority": 1,
       "mode": "creator_posts_and_coins",
       "public_profile": null,
-      "public_wallet_address": null,
+      "public_wallet_address": "0x8467B8BD6BD64C14F82Ed125EBeCf1E9b8134e4F",
       "requires_owner_signature": true,
       "notes": "Use original posts and track creator/trade rewards. Never simulate trading volume."
     },
@@ -29,14 +29,14 @@
       "priority": 4,
       "mode": "nft_collection",
       "chain_preference": "base",
-      "public_wallet_address": null,
+      "public_wallet_address": "0x8467B8BD6BD64C14F82Ed125EBeCf1E9b8134e4F",
       "requires_owner_signature": true
     },
     "rarible": {
       "enabled": true,
       "priority": 5,
       "mode": "nft_collection_or_community_marketplace",
-      "public_wallet_address": null,
+      "public_wallet_address": "0x8467B8BD6BD64C14F82Ed125EBeCf1E9b8134e4F",
       "requires_owner_signature": true
     },
     "magic_eden": {
