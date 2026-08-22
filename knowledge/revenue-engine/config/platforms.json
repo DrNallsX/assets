@@ -66,8 +66,12 @@
       "mode": "organic_visual_search_traffic",
       "business_account": true,
       "board": "Futuristic Digital Art & Wallpapers",
-      "live_pins": 1,
-      "primary_destination": "https://ko-fi.com/s/72394a0b9c"
+      "live_pins": 3,
+      "destinations": [
+        "https://ko-fi.com/s/3ec8ecb2fa",
+        "https://ko-fi.com/s/18b8327046",
+        "https://ko-fi.com/s/72394a0b9c"
+      ]
     },
     "itch_io": {
       "enabled": true,
