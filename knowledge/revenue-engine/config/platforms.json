@@ -43,10 +43,19 @@
           "minimum_price_usd": 12,
           "pay_what_you_want": true,
           "status": "published",
+          "role": "core_collection",
           "distribution": {
             "facebook": "live",
             "x": "live"
           }
+        },
+        {
+          "name": "Signal Relics — Complete Vault",
+          "url": "https://ko-fi.com/s/728eea107a",
+          "minimum_price_usd": 29,
+          "pay_what_you_want": true,
+          "status": "published",
+          "role": "premium_bundle"
         }
       ]
     },
