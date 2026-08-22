@@ -29,6 +29,15 @@
           "role": "top_of_funnel"
         },
         {
+          "name": "Signal Relics — Mobile Vault: 24 Phone Wallpapers",
+          "url": "https://ko-fi.com/s/18b8327046",
+          "minimum_price_usd": 7,
+          "pay_what_you_want": true,
+          "status": "published",
+          "role": "entry_paid_offer",
+          "metadata_review": "needs_summary_resolution_fix_to_1440x3200"
+        },
+        {
           "name": "Signal Relics — 24 Original Digital Artworks",
           "url": "https://ko-fi.com/s/72394a0b9c",
           "minimum_price_usd": 12,
