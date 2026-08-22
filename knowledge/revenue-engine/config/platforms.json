@@ -15,7 +15,9 @@
       "enabled": true,
       "priority": 2,
       "mode": "digital_products_commissions_tips",
-      "public_store_url": null,
+      "public_store_url": "https://ko-fi.com/drnalls",
+      "stripe_connected": true,
+      "currency": "USD",
       "requires_owner_payment_account": true
     },
     "itch_io": {
