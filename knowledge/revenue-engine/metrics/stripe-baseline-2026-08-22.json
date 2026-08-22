@@ -1,0 +1,10 @@
+{
+  "captured_at_local": "2026-08-22T15:49:00-05:00",
+  "stripe_account": "Asan International",
+  "livemode": true,
+  "charges_count_observed": 0,
+  "available_balance_usd": 0,
+  "pending_balance_usd": 0,
+  "payouts_count_observed": 0,
+  "purpose": "Known launch baseline for detecting first confirmed creator revenue."
+}
