@@ -46,7 +46,8 @@
           "role": "core_collection",
           "distribution": {
             "facebook": "live",
-            "x": "live"
+            "x": "live",
+            "pinterest": "live"
           }
         },
         {
@@ -59,16 +60,25 @@
         }
       ]
     },
-    "itch_io": {
+    "pinterest": {
       "enabled": true,
       "priority": 3,
+      "mode": "organic_visual_search_traffic",
+      "business_account": true,
+      "board": "Futuristic Digital Art & Wallpapers",
+      "live_pins": 1,
+      "primary_destination": "https://ko-fi.com/s/72394a0b9c"
+    },
+    "itch_io": {
+      "enabled": true,
+      "priority": 4,
       "mode": "digital_asset_packs_tools",
       "public_profile": null,
       "requires_owner_payment_account": true
     },
     "opensea": {
       "enabled": true,
-      "priority": 4,
+      "priority": 5,
       "mode": "nft_collection",
       "chain_preference": "base",
       "public_wallet_address": "0x8467B8BD6BD64C14F82Ed125EBeCf1E9b8134e4F",
@@ -76,14 +86,14 @@
     },
     "rarible": {
       "enabled": true,
-      "priority": 5,
+      "priority": 6,
       "mode": "nft_collection_or_community_marketplace",
       "public_wallet_address": "0x8467B8BD6BD64C14F82Ed125EBeCf1E9b8134e4F",
       "requires_owner_signature": true
     },
     "magic_eden": {
       "enabled": true,
-      "priority": 6,
+      "priority": 7,
       "mode": "solana_nft_collection",
       "chain_preference": "solana",
       "public_wallet_address": null,
@@ -91,14 +101,14 @@
     },
     "etsy": {
       "enabled": false,
-      "priority": 7,
+      "priority": 8,
       "mode": "digital_downloads",
       "public_shop_url": null,
       "activation_reason": "Enable after demand validation because each listing incurs a fee."
     },
     "gumroad": {
       "enabled": false,
-      "priority": 8,
+      "priority": 9,
       "mode": "digital_products_memberships",
       "public_profile": null,
       "activation_reason": "Enable after demand validation because direct-sale fees are materially higher than several alternatives."
