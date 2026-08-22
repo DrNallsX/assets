@@ -25,7 +25,11 @@
           "url": "https://ko-fi.com/s/72394a0b9c",
           "minimum_price_usd": 12,
           "pay_what_you_want": true,
-          "status": "published"
+          "status": "published",
+          "distribution": {
+            "facebook": "live",
+            "x": "live"
+          }
         }
       ]
     },
