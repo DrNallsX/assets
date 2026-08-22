@@ -18,7 +18,16 @@
       "public_store_url": "https://ko-fi.com/drnalls",
       "stripe_connected": true,
       "currency": "USD",
-      "requires_owner_payment_account": true
+      "requires_owner_payment_account": true,
+      "live_products": [
+        {
+          "name": "Signal Relics — 24 Original Digital Artworks",
+          "url": "https://ko-fi.com/s/72394a0b9c",
+          "minimum_price_usd": 12,
+          "pay_what_you_want": true,
+          "status": "published"
+        }
+      ]
     },
     "itch_io": {
       "enabled": true,
