@@ -47,7 +47,8 @@
           "distribution": {
             "facebook": "live",
             "x": "live",
-            "pinterest": "live"
+            "pinterest": "live",
+            "tiktok": "live"
           }
         },
         {
@@ -73,16 +74,28 @@
         "https://ko-fi.com/s/72394a0b9c"
       ]
     },
-    "itch_io": {
+    "tiktok": {
       "enabled": true,
       "priority": 4,
+      "mode": "organic_short_form_video_traffic",
+      "public_profile": "signalrelics",
+      "display_name": "Signal Relics | Dr Nalls",
+      "followers_at_launch": 64,
+      "first_reel_status": "published",
+      "profile_link_clickable": false,
+      "bio_store_path": "ko-fi.com/drnalls",
+      "commercial_disclosure": "enabled_for_product_promotion"
+    },
+    "itch_io": {
+      "enabled": true,
+      "priority": 5,
       "mode": "digital_asset_packs_tools",
       "public_profile": null,
       "requires_owner_payment_account": true
     },
     "opensea": {
       "enabled": true,
-      "priority": 5,
+      "priority": 6,
       "mode": "nft_collection",
       "chain_preference": "base",
       "public_wallet_address": "0x8467B8BD6BD64C14F82Ed125EBeCf1E9b8134e4F",
@@ -90,14 +103,14 @@
     },
     "rarible": {
       "enabled": true,
-      "priority": 6,
+      "priority": 7,
       "mode": "nft_collection_or_community_marketplace",
       "public_wallet_address": "0x8467B8BD6BD64C14F82Ed125EBeCf1E9b8134e4F",
       "requires_owner_signature": true
     },
     "magic_eden": {
       "enabled": true,
-      "priority": 7,
+      "priority": 8,
       "mode": "solana_nft_collection",
       "chain_preference": "solana",
       "public_wallet_address": null,
@@ -105,14 +118,14 @@
     },
     "etsy": {
       "enabled": false,
-      "priority": 8,
+      "priority": 9,
       "mode": "digital_downloads",
       "public_shop_url": null,
       "activation_reason": "Enable after demand validation because each listing incurs a fee."
     },
     "gumroad": {
       "enabled": false,
-      "priority": 9,
+      "priority": 10,
       "mode": "digital_products_memberships",
       "public_profile": null,
       "activation_reason": "Enable after demand validation because direct-sale fees are materially higher than several alternatives."
