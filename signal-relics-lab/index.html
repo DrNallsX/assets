@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#07070f" />
+  <meta name="description" content="Signal Relics Lab — explore a deterministic geometric visual system and discover Genesis Eight on Base." />
+  <meta property="og:title" content="Signal Relics Lab — This wasn't drawn. It was derived." />
+  <meta property="og:description" content="Manipulate the rules. Share a state. Explore the closed Genesis Eight collection on Base." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://signal-relics-lab.vercel.app/og.svg" />
+  <title>Signal Relics Lab</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip" href="#controls">Skip to controls</a>
+  <header class="site-header">
+    <div class="brand" aria-label="Signal Relics">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <div>
+        <strong>SIGNAL RELICS</strong>
+        <span>LAB</span>
+      </div>
+    </div>
+    <nav aria-label="Primary">
+      <a href="#about">Method</a>
+      <a href="https://opensea.io/collection/signal-relics-genesis-eight" target="_blank" rel="noopener noreferrer" data-track="opensea_click">Genesis Eight</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">DETERMINISTIC VISUAL SYSTEM</p>
+        <h1>This wasn't drawn.<br /><em>It was derived.</em></h1>
+        <p class="lede">Change the rules. The same inputs always reconstruct the same signal. No wallet is required to explore.</p>
+      </div>
+
+      <div class="lab-shell" aria-label="Interactive Signal Relics generator">
+        <div class="canvas-wrap">
+          <canvas id="relic" width="1080" height="1080" role="img" aria-label="Generated deterministic geometric Signal Relic"></canvas>
+          <div class="signal-id"><span>STATE</span><code id="stateId">SR-00000000</code></div>
+        </div>
+
+        <form id="controls" class="controls" onsubmit="return false;">
+          <div class="control-row">
+            <label for="rings">Ring count <output id="ringsOut">7</output></label>
+            <input id="rings" type="range" min="3" max="12" value="7" />
+          </div>
+          <div class="control-row">
+            <label for="density">Vector density <output id="densityOut">48</output></label>
+            <input id="density" type="range" min="12" max="96" step="6" value="48" />
+          </div>
+          <div class="control-row">
+            <label for="symmetry">Symmetry <output id="symmetryOut">8</output></label>
+            <input id="symmetry" type="range" min="3" max="12" value="8" />
+          </div>
+          <div class="control-row">
+            <label for="palette">Palette</label>
+            <select id="palette">
+              <option value="signal">Signal</option>
+              <option value="violet">Violet Array</option>
+              <option value="ember">Ember Grid</option>
+              <option value="deep">Deep Carrier</option>
+            </select>
+          </div>
+          <div class="seed-row">
+            <label for="seed">Seed</label>
+            <input id="seed" type="text" value="GENESIS" maxlength="32" autocomplete="off" spellcheck="false" />
+          </div>
+          <div class="actions">
+            <button id="newState" class="button primary" type="button">New state</button>
+            <button id="shareState" class="button" type="button">Copy share link</button>
+          </div>
+          <p id="status" class="status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div>
+        <p class="eyebrow">THE METHOD</p>
+        <h2>Code as the medium.</h2>
+      </div>
+      <div class="about-copy">
+        <p>Signal Relics is a deterministic geometric system built from explicit rules: symmetry, rings, vectors, controlled variation, palette, and seed. A state is reproducible because its parameters are part of its identity.</p>
+        <p><strong>Genesis Eight</strong> preserves eight inaugural 1/1 states on Base. That collection is permanently closed at eight works; this Lab does not mint into it.</p>
+      </div>
+    </section>
+
+    <section class="cta" aria-label="Explore Signal Relics">
+      <p class="eyebrow">THE INAUGURAL COLLECTION</p>
+      <h2>Eight states. Eight 1/1 works.<br />No additions.</h2>
+      <div class="cta-actions">
+        <a class="button primary" href="https://opensea.io/collection/signal-relics-genesis-eight?utm_source=signal_relics_lab&utm_medium=web&utm_campaign=genesis_eight" target="_blank" rel="noopener noreferrer" data-track="opensea_click">Explore Genesis Eight</a>
+        <a class="button" href="https://ko-fi.com/drnalls?utm_source=signal_relics_lab&utm_medium=web&utm_campaign=store" target="_blank" rel="noopener noreferrer" data-track="kofi_click">Digital Vaults on Ko-fi</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Signal Relics</span>
+    <span>Deterministic digital art • Base</span>
+  </footer>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
