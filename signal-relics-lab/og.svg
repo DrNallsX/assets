@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="bg" cx="65%" cy="50%" r="70%"><stop offset="0" stop-color="#1a1640"/><stop offset=".45" stop-color="#0c0d19"/><stop offset="1" stop-color="#05060b"/></radialGradient>
+    <linearGradient id="g" x1="0" x2="1"><stop stop-color="#4be7ff"/><stop offset=".5" stop-color="#9c6bff"/><stop offset="1" stop-color="#ff4dd8"/></linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity=".14" stroke="#82a0d0"><path d="M0 105h1200M0 210h1200M0 315h1200M0 420h1200M0 525h1200"/><path d="M100 0v630M200 0v630M300 0v630M400 0v630M500 0v630M600 0v630M700 0v630M800 0v630M900 0v630M1000 0v630M1100 0v630"/></g>
+  <g transform="translate(890 315)" fill="none" stroke="url(#g)">
+    <circle r="170" stroke-width="3"/><circle r="130" stroke-width="2"/><circle r="92" stroke-width="2"/><circle r="55" stroke-width="3"/>
+    <path d="M0-115 100-58 100 58 0 115-100 58-100-58Z" stroke-width="4"/>
+    <path d="M0-55 48-28 48 28 0 55-48 28-48-28Z" stroke-width="5"/>
+    <g stroke-width="1.5" opacity=".65"><path d="M0-215V-115M0 115v100M-215 0h115M115 0h100M-152-152-80-80M80 80l72 72M152-152 80-80M-80 80l-72 72"/></g>
+  </g>
+  <text x="86" y="205" fill="#4be7ff" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" letter-spacing="6">SIGNAL RELICS LAB</text>
+  <text x="82" y="295" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="700">This wasn't drawn.</text>
+  <text x="82" y="365" fill="url(#g)" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="700">It was derived.</text>
+  <text x="86" y="430" fill="#aab1c6" font-family="Arial, Helvetica, sans-serif" font-size="25">Explore a deterministic geometric visual system.</text>
+  <text x="86" y="474" fill="#aab1c6" font-family="Arial, Helvetica, sans-serif" font-size="25">Genesis Eight • 8 original 1/1 works • Base</text>
+</svg>
