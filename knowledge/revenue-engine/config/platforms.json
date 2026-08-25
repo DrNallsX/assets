@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "platforms": {
+    "zora": {
+      "enabled": true,
+      "priority": 1,
+      "mode": "creator_posts_and_coins",
+      "public_profile": "drnalls",
+      "public_wallet_address": "0xc7127a7381c3200b57b6caac033939b3fb849ce9",
+      "public_external_wallet_address": "0x8467B8BD6BD64C14F82Ed125EBeCf1E9b8134e4F",
+      "requires_owner_signature": true,
+      "notes": "Primary Zora monitoring address is the Zora smart wallet. External creator MetaMask is recorded separately. Use original posts and track creator/trade rewards. Never simulate trading volume."
+    },
+    "ko_fi": {
+      "enabled": true,
+      "priority": 2,
+      "mode": "digital_products_commissions_tips",
+      "public_store_url": "https://ko-fi.com/drnalls",
+      "stripe_connected": true,
+      "currency": "USD",
+      "requires_owner_payment_account": true,
+      "live_products": [
+        {
+          "name": "Signal Relics — Free 3-Wallpaper Sampler",
+          "url": "https://ko-fi.com/s/3ec8ecb2fa",
+          "minimum_price_usd": 0,
+          "pay_what_you_want": true,
+          "status": "published",
+          "role": "top_of_funnel"
+        },
+        {
+          "name": "Signal Relics — Mobile Vault: 24 Phone Wallpapers",
+          "url": "https://ko-fi.com/s/18b8327046",
+          "minimum_price_usd": 7,
+          "pay_what_you_want": true,
+          "status": "published",
+          "role": "entry_paid_offer",
+          "metadata_review": "needs_summary_resolution_fix_to_1440x3200"
+        },
+        {
+          "name": "Signal Relics — 24 Original Digital Artworks",
+          "url": "https://ko-fi.com/s/72394a0b9c",
+          "minimum_price_usd": 12,
+          "pay_what_you_want": true,
+          "status": "published",
+          "role": "core_collection",
+          "distribution": {
+            "facebook": "live",
+            "x": "live",
+            "pinterest": "live",
+            "tiktok": "live",
+            "instagram": "live"
+          }
+        },
+        {
+          "name": "Signal Relics — Complete Vault",
+          "url": "https://ko-fi.com/s/728eea107a",
+          "minimum_price_usd": 29,
+          "pay_what_you_want": true,
+          "status": "published",
+          "role": "premium_bundle"
+        }
+      ]
+    },
+    "pinterest": {
+      "enabled": true,
+      "priority": 3,
+      "mode": "organic_visual_search_traffic",
+      "business_account": true,
+      "board": "Futuristic Digital Art & Wallpapers",
+      "live_pins": 3,
+      "destinations": [
+        "https://ko-fi.com/s/3ec8ecb2fa",
+        "https://ko-fi.com/s/18b8327046",
+        "https://ko-fi.com/s/72394a0b9c"
+      ]
+    },
+    "tiktok": {
+      "enabled": true,
+      "priority": 4,
+      "mode": "organic_short_form_video_traffic",
+      "public_profile": "signalrelics",
+      "display_name": "Signal Relics | Dr Nalls",
+      "followers_at_launch": 64,
+      "first_reel_status": "published",
+      "profile_link_clickable": false,
+      "bio_store_path": "ko-fi.com/drnalls",
+      "commercial_disclosure": "enabled_for_product_promotion"
+    },
+    "instagram": {
+      "enabled": true,
+      "priority": 5,
+      "mode": "organic_reels_and_crosspost_traffic",
+      "public_profile": "topfloorplz",
+      "followers_at_launch": 718,
+      "professional_account": true,
+      "store_link": "https://ko-fi.com/drnalls",
+      "store_link_title": "Shop Signal Relics",
+      "first_reel_status": "published",
+      "crosspost_targets": ["threads", "facebook", "story"]
+    },
+    "itch_io": {
+      "enabled": true,
+      "priority": 6,
+      "mode": "digital_asset_packs_tools",
+      "public_profile": null,
+      "requires_owner_payment_account": true
+    },
+    "opensea": {
+      "enabled": true,
+      "priority": 7,
+      "mode": "nft_collection",
+      "chain_preference": "base",
+      "public_wallet_address": "0x8467B8BD6BD64C14F82Ed125EBeCf1E9b8134e4F",
+      "requires_owner_signature": true
+    },
+    "rarible": {
+      "enabled": true,
+      "priority": 8,
+      "mode": "nft_collection_or_community_marketplace",
+      "public_wallet_address": "0x8467B8BD6BD64C14F82Ed125EBeCf1E9b8134e4F",
+      "requires_owner_signature": true
+    },
+    "magic_eden": {
+      "enabled": true,
+      "priority": 9,
+      "mode": "solana_nft_collection",
+      "chain_preference": "solana",
+      "public_wallet_address": null,
+      "requires_owner_signature": true
+    },
+    "etsy": {
+      "enabled": false,
+      "priority": 10,
+      "mode": "digital_downloads",
+      "public_shop_url": null,
+      "activation_reason": "Enable after demand validation because each listing incurs a fee."
+    },
+    "gumroad": {
+      "enabled": false,
+      "priority": 11,
+      "mode": "digital_products_memberships",
+      "public_profile": null,
+      "activation_reason": "Enable after demand validation because direct-sale fees are materially higher than several alternatives."
+    }
+  }
+}

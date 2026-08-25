@@ -1,0 +1,45 @@
+{
+  "updated": "2026-08-22",
+  "products": [
+    {
+      "name": "Signal Relics — 24 Original Digital Artworks",
+      "channel": "Ko-fi",
+      "status": "live",
+      "minimum_price_usd": 12,
+      "pay_what_you_want": true,
+      "url": "https://ko-fi.com/s/72394a0b9c"
+    },
+    {
+      "name": "Signal Relics — Mobile Vault",
+      "status": "ready_to_publish",
+      "minimum_price_usd": 7,
+      "pay_what_you_want": true,
+      "deliverable": "Signal_Relics_Mobile_Vault_24_Wallpapers.zip",
+      "contents": "24 vertical 1440x3200 JPG phone wallpapers"
+    },
+    {
+      "name": "Signal Relics — Desktop & Stream Pack",
+      "status": "ready_to_publish",
+      "minimum_price_usd": 9,
+      "pay_what_you_want": true,
+      "deliverable": "Signal_Relics_Desktop_Stream_Pack_24_Backgrounds.zip",
+      "contents": "24 widescreen 2560x1440 JPG backgrounds"
+    },
+    {
+      "name": "Signal Relics — Motion Vault",
+      "status": "ready_to_publish",
+      "minimum_price_usd": 18,
+      "pay_what_you_want": true,
+      "deliverable": "Signal_Relics_Motion_Vault_8_Loops.zip",
+      "contents": "8 vertical 1080x1920 MP4 visual loops"
+    },
+    {
+      "name": "Signal Relics — Complete Vault",
+      "status": "ready_to_publish",
+      "minimum_price_usd": 29,
+      "pay_what_you_want": true,
+      "deliverable": "Signal_Relics_COMPLETE_VAULT.zip",
+      "contents": "Original collection, mobile, desktop, and motion editions"
+    }
+  ]
+}

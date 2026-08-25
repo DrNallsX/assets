@@ -1,0 +1,17 @@
+{
+  "collection_name": "Signal Relics: Genesis Eight",
+  "symbol": "SRG8",
+  "status": "assets_ready_owner_action_required",
+  "marketplace_priority": ["OpenSea", "Rarible"],
+  "primary_marketplace": "OpenSea",
+  "chain": "Base",
+  "creation_mode": "Open Collection",
+  "token_standard": "ERC-1155",
+  "items": 8,
+  "supply_per_item": 1,
+  "suggested_creator_earnings_percent": 5,
+  "payout_wallet": "0x8467B8BD6BD64C14F82Ed125EBeCf1E9b8134e4F",
+  "rights": "Collectible token ownership only; copyright and commercial rights are not transferred.",
+  "deployment_policy": "Require owner wallet signature and review actual Base gas quote before deploying or minting.",
+  "rarible_policy": "Do not pay a 1,000 RARI collection-listing cost without demonstrated demand and ROI."
+}

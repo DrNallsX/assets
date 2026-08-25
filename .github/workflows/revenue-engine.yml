@@ -1,0 +1,39 @@
+name: Revenue Engine Smoke Test
+
+on:
+  pull_request:
+    paths:
+      - 'knowledge/revenue-engine/**'
+      - '.github/workflows/revenue-engine.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  generate-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Generate test collection
+        run: python knowledge/revenue-engine/src/generate_signal_relics.py --count 24 --out /tmp/signal-relics
+      - name: Validate deterministic outputs
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path('/tmp/signal-relics')
+          catalog = json.loads((root / 'catalog.json').read_text())
+          assert len(catalog) == 24
+          assert len(list((root / 'images').glob('*.svg'))) == 24
+          assert len(list((root / 'metadata').glob('*.json'))) == 24
+          for path in (root / 'metadata').glob('*.json'):
+              record = json.loads(path.read_text())
+              assert record['name'].startswith('Signal Relic #')
+              assert record['image'].endswith('.svg')
+              assert record['attributes']
+          print('Revenue engine smoke test passed')
+          PY
