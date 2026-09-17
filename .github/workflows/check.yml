@@ -13,22 +13,35 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: assets-check-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   check:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+
     steps:
       - name: Check out code
         uses: actions/checkout@v7
+        with:
+          persist-credentials: false
 
       - name: Set up Go
         uses: actions/setup-go@v7
         with:
           go-version-file: go.mod
+          cache: true
+          cache-dependency-path: go.sum
+
+      - name: Show toolchain
+        run: go version
 
       - name: Run check
         run: make check
 
-      - name: Unit Test
+      - name: Unit test
         run: make test
 
       - name: Lint
